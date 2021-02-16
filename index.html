@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 
 <head>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1,  user-scalable=false">
 <style>
- .big {margin:0px auto;width:95%;}
+.big {margin:0px auto;width:95%;}
 .tab {overflow:hidden;float:left;margin:5px;padding:10px;width:300px;height:300px;border: 1px solid black;}   
+.open {overflow:hidden;float:left;margin:5px;padding:10px;width:300px;height:300px;border: 1px solid black;} 
 .open .tab1{display:none}
 a:visited{color:black;}
 a:link{color:black;}
@@ -19,6 +21,9 @@ a:link{color:black;}
 .link16{width:300px;height:300px;border:1px solid #ccc;border-right:0;border-bottom:0;}
 .link16 div{text-align:center;width:74px;height:74px;border-right:1px solid #ccc;border-bottom:1px solid #ccc;float:left;}
  .footer{text-align:center;width:95%;float:left;padding:25px;}
+@media screen and (max-width:1000px){
+.tab1 { display:none; }
+}
 </style>
 </head>
 <body>
@@ -29,7 +34,6 @@ a:link{color:black;}
 <div class="tab" onmouseover="this.className='open'" onmouseout="this.className='tab'">
 <div class=tab1><h1>新闻</h1>
 <p>News</p></div>
-<div class=tab>
 <div class="link">
   <a href="http://news.ifeng.com/"><div><br>凤凰新闻</div></a>
   <a href="http://www.i3u.cn/"><div><br>路透中文</div></a>
@@ -38,13 +42,12 @@ a:link{color:black;}
   <a href="http://www.people.com.cn/"><div><br>人民网</div></a>
   <a href="http://www.xinhuanet.com/"><div><br>新华网</div></a>
   <a href="http://www.caixin.com/"><div><br>财新网(收费)</div></a>
-</div>
 </div></div>
+
 <div class="tab" onmouseover="this.className='open'" onmouseout="this.className='tab'">
 <div class=tab1><h1>常用</h1>
 <p>名词 noun n. 代词 pronoun pron. 形容词 adjective adj. 副词 adverb adv. 动词 verb v. 数词 numeral num.冠词 article art. 介词 preposition prep. 连词 conjunction conj. 感叹词 interjection interj.</p>
 </div>
-<div class=tab>
 <div class="link">
   <a href="http://www.hao123.com/mail"><div><br>邮箱</div></a>
   <a href="http://www.guangdiu.com"><div><br>逛丢</div></a>
@@ -53,12 +56,11 @@ a:link{color:black;}
   <a href="http://chiphell.com"><div><br>Chiphell</div></a>
   <a href="http://cowtransfer.com"><div><br>奶牛</div></a>
   <a href="http://www.jiumodiary.com/"><div><br>鸠摩</div></a>
-</div>
 </div></div>
+
 <div class="tab" onmouseover="this.className='open'" onmouseout="this.className='tab'">
 <div class=tab1><h1>电影</h1>
 <p>film, motion picture movie 电影、newsreel 新闻片,纪录片、documentary (film) 记录片,文献片、filmdom 电影界、literary film 文艺片、musicals 音乐片、comedy 喜剧片、tragedy 悲剧片、dracula movie 恐怖片、sowordsmen film 武侠片、detective film 侦察片、ethical film 伦理片、affectional film 爱情片</p></div>
-<div class=tab>
 <div class="link">
   <a href="https://www.66s.cc"><div><br>66s</div></a>
   <a href="http://ashvsash.com"><div><br>爱生活</div></a>
@@ -69,27 +71,25 @@ a:link{color:black;}
   <a href="https://91mjw.com"><div><br>就要美剧</div></a>
   <a href="https://ddrk.me"><div><br>低端</div></a>
   <a href="https://www.tzfile.com"><div><br>团长</div></a>
-</div>
 </div></div>
+
 <div class="tab" onmouseover="this.className='open'" onmouseout="this.className='tab'">
 <div class=tab1>
 <h1>音乐</h1>
 <p>Blues 蓝调、Jazz 爵士、Classical music 古典音乐、Rock and Roll 摇滚乐、Disco 迪斯科、Country Music 乡村音乐、Hip Hop 嘻哈音乐、Symphony 交响乐、Rhythm & Blues(R&B) 节奏布鲁斯、Punk 朋克、Folkmusic 民间音乐、Light Music 轻音乐。</p>
 </div>
-<div class=tab>
 <div class="link4">
   <a href="http://music.runker.net/"><div><br><h2>享受生活</h2></div></a>
   <a href="http://tool.liumingye.cn/music/"><div><br><h2>MyfreeMP3</h2></div></a>
   <a href="http://www.autolyric.com/zh-hans/topsongs"><div><br><h2>AutoLyric排行榜</h2></div></a>
   <a href="http://music.ifkdy.com/"><div><br><h2>音乐解析</h2></div></a>
-</div>
 </div></div>
+
 <div class="tab" onmouseover="this.className='open'" onmouseout="this.className='tab'">
 <div class=tab1>
 <h1>软件</h1>
 <p>Free free free </p>
 </div>
-<div class=tab>
 <div class="link16">
   <a href="http://www.runker.net/"><div><br>行客</div></a>
   <a href="http://www.ddooo.com"><div><br>Ddooo</div></a>
@@ -99,7 +99,6 @@ a:link{color:black;}
   <a href="http://www.423down.com"><div><br>423down</div></a>
   <a href="http://www.zhanshaoyi.com/rjxz.html"><div><br>我爱分享</div></a>
   <a href="https://xclient.info/"><div><br>Xclient</div></a>
-</div>
 </div></div>
  <div class="footer">By noonion @<a href="https://www.jianshu.com/p/e7d7402e2f67">2020.5</a></div>
  </div>
